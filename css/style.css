@@ -1,0 +1,224 @@
+/* filter: grayscale(100%);
+transform: scale(0.8, 0.8) rotate(2deg); */
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* great-vibes-regular - latin */
+@font-face {
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Great Vibes"), local("GreatVibes-Regular"),
+    url("../fonts/great-vibes-v7-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/great-vibes-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #ecebeb;
+  font-family: var(--main-font);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.slider {
+  /* background: rgb(26, 25, 21) url(../img/mobile/foto-slider-m.png) center
+    no-repeat;
+  background-size: cover; */
+  /* margin: 0 auto; */
+  /* padding-top: 20px; */
+  /* text-align: center; */
+  margin-bottom: 20px;
+  /* display: block;
+  width: 100%;
+  height: auto; */
+}
+.slider__img {
+  margin: 0 auto;
+}
+.header {
+  padding: 20px 0;
+}
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "Great Vibes";
+  font-size: 40px;
+}
+.social-list {
+  display: flex;
+}
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list__link {
+  display: block;
+  width: 46px;
+  height: 46px;
+  /* background-color: rgb(252, 227, 138); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 10%;
+}
+.social-list__link--frilancer {
+  background-image: url(../images/icons/frilancer.png);
+}
+.social-list__link--upwork {
+  background-image: url(../images/icons/upwork.png);
+}
+.social-list__link--linkedin {
+  background-image: url(../images/icons/linkedin.png);
+}
+.me {
+  margin: 0 auto;
+}
+.foto {
+  /* border: 2px solid rgb(89, 169, 235); */
+  max-width: 300px;
+  margin-bottom: 20px;
+  /* margin-right: auto; */
+}
+/* .foto__position {
+  margin: 0 auto;
+} */
+.foto__img {
+  filter: grayscale(100%);
+  transform: scale(0.9, 0.9) rotate(2deg);
+}
+.name {
+  /* max-width: 350px; */
+  padding-bottom: 20px;
+}
+.name__title {
+  padding-bottom: 15px;
+}
+.name__item {
+  text-align: left;
+  padding-left: 50px;
+}
+.my-skils {
+  text-align: left;
+}
+.skils__list {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.contact {
+  display: flex;
+}
+.contact__img {
+  margin-bottom: 15px;
+}
+.contact__description {
+  margin-bottom: 15px;
+}
+.foto:hover .foto__img {
+  box-shadow: 10px 10px rgb(125, 125, 126);
+  transition: 200ms linear;
+  filter: none;
+  transform: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 748px;
+    text-align: center;
+  }
+  .me {
+    display: flex;
+    margin: 0 auto;
+  }
+  .my-skils {
+    text-align: center;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    max-width: 940px;
+    /* justify-content: space-between; */
+  }
+  .me {
+    /* max-width: 700px; */
+    margin: 0 auto;
+  }
+}
