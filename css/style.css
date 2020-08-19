@@ -94,16 +94,7 @@ ol {
   margin: -1px;
 }
 .slider {
-  /* background: rgb(26, 25, 21) url(../img/mobile/foto-slider-m.png) center
-    no-repeat;
-  background-size: cover; */
-  /* margin: 0 auto; */
-  /* padding-top: 20px; */
-  /* text-align: center; */
   margin-bottom: 20px;
-  /* display: block;
-  width: 100%;
-  height: auto; */
 }
 .slider__img {
   margin: 0 auto;
@@ -123,6 +114,7 @@ ol {
 .logo {
   font-family: "Great Vibes";
   font-size: 40px;
+  /* color: black; */
 }
 .social-list {
   display: flex;
@@ -172,9 +164,46 @@ ol {
 .name__title {
   padding-bottom: 15px;
 }
+.name__list {
+  padding-bottom: 15px;
+}
 .name__item {
   text-align: left;
   padding-left: 50px;
+}
+.job-list {
+  display: flex;
+  justify-content: center;
+}
+.job-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.job-list__link {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 10%;
+}
+.job-list__link--one {
+  background-image: url(../images/numbers/one.png);
+}
+.job-list__link--two {
+  background-image: url(../images/numbers/two.png);
+}
+.job-list__link--three {
+  background-image: url(../images/numbers/three.png);
+}
+.job-list__link--four {
+  background-image: url(../images/numbers/four.png);
+}
+.job-list__link--five {
+  background-image: url(../images/numbers/five.png);
+}
+.job-list__link--six {
+  background-image: url(../images/numbers/six.png);
 }
 .my-skils {
   text-align: left;
